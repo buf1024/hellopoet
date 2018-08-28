@@ -50,7 +50,7 @@ class AboutPage extends Component {
             {'\n\n'}
             诗词数据来源(源数据已经简单处理):
             <Text style={[styles.linkText, {color: theme.color}]} onPress={() => Linking.openURL('https://github.com/chinese-poetry/chinese-poetry')}>chinese-poetry</Text>
-            {'\n'}数据库中包括（可能存在部分重复）了，10498位两宋时期诗词人，3719位唐朝诗人，275284首两宋时朝诗词，
+            {'\n'}数据库中包括（可能存在部分重复）了，9857位两宋时期诗词人，3707位唐朝诗人，275284首两宋时朝诗词，
             57591首唐诗，以及诗经（305首）全文。
             {'\n\n'}
             功能简介:{'\n'}
