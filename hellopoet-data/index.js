@@ -134,9 +134,12 @@ Object.entries(filesAuthor).forEach(([dynasty, authors]) => {
             author.desc = opencct2s.convertSync(author.desc)
             try {
                 let schema = dynasty === 'tang' ? 'AuthorTang' : 'AuthorSong'
-                realm.write(() => {
-                    realm.create(schema, author)
-                })
+                let dbAuthor = realm.objects(schema).filtered('name = $0', author.name)
+                if (!dbAuthor || dbAuthor.length <= 0) {
+                    realm.write(() => {
+                        realm.create(schema, author)
+                    })
+                }
             } catch (error) {
                 console.log('write author error: ' + error)
             }
