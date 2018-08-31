@@ -4,8 +4,7 @@
 react native可以同时支持ios和android，由于没有ios手机和苹果开发者账户，所以发布不了ios相关的应用。android离线安装包下载：[唐诗宋词](https://github.com/buf1024/hellopoet/releases)
 
 ### 功能特性
-数据源来自jackeyGao收集的全唐诗数据库：  
-https://github.com/jackeyGao/chinese-poetry
+数据源来自：https://github.com/chinese-poetry/chinese-poetry
 
 源数据已经简单处理，离线数据库中包括（可能存在部分重复）了，10498位两宋时期诗词人，3719位唐朝诗人，275284首两宋时朝诗词，57591首唐诗，以及诗经（305首）全文。
 
